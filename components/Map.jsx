@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import { FaList, FaMap, FaTimes } from 'react-icons/fa'
+import { FaList, FaTimes } from 'react-icons/fa'
 
 const createCustomIcon = (color = '#f97316') => {
   return L.divIcon({
@@ -31,8 +31,7 @@ const createCustomIcon = (color = '#f97316') => {
   })
 }
 
-// Composant pour ouvrir un popup programmatiquement
-function PopupOpener({ markerRef, siteId, selectedSiteId }) {
+function PopupOpener({ markerRef, selectedSiteId }) {
   const map = useMap()
   
   useEffect(() => {
@@ -72,8 +71,9 @@ export default function Map({ sites }) {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768)
-      if (window.innerWidth < 768) {
+      const mobile = window.innerWidth < 768
+      setIsMobile(mobile)
+      if (mobile) {
         setShowList(false)
       } else {
         setShowList(true)
@@ -102,6 +102,10 @@ export default function Map({ sites }) {
 
   const openSitePopup = (siteId) => {
     setSelectedSiteId(siteId)
+    // Fermer la liste automatiquement sur mobile après sélection
+    if (isMobile) {
+      setShowList(false)
+    }
     setTimeout(() => setSelectedSiteId(null), 500)
   }
 
@@ -118,61 +122,81 @@ export default function Map({ sites }) {
 
   return (
     <div className="relative">
-      {/* Bouton toggle pour mobile */}
-      <button
-        onClick={() => setShowList(!showList)}
-        className="md:hidden fixed bottom-4 right-4 z-20 bg-orange-500 text-white p-3 rounded-full shadow-lg"
-      >
-        {showList ? <FaTimes className="w-5 h-5" /> : <FaList className="w-5 h-5" />}
-      </button>
+      {/* Bouton toggle pour mobile - toujours visible sur mobile */}
+      {isMobile && (
+        <button
+          onClick={() => setShowList(!showList)}
+          className="fixed bottom-4 right-4 z-30 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition-all"
+        >
+          {showList ? <FaTimes className="w-5 h-5" /> : <FaList className="w-5 h-5" />}
+        </button>
+      )}
 
       <div className="flex flex-col md:flex-row gap-4">
-        {/* Liste des sites */}
-        <div className={`${showList ? 'block' : 'hidden md:block'} md:w-80 flex-shrink-0`}>
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden sticky top-20 max-h-[500px] overflow-y-auto">
-            <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-4">
-              <h3 className="text-white font-bold flex items-center gap-2">
-                <FaList className="w-4 h-4" />
-                Sites touristiques
-              </h3>
-              <p className="text-white/80 text-sm mt-1">{sites.length} sites a decouvrir</p>
-            </div>
-            <div className="divide-y divide-gray-100">
-              {sites.map((site) => (
+        {/* Liste des sites - gestion mobile améliorée */}
+        <div className={`
+          ${isMobile ? 'fixed inset-0 z-20 bg-white/95 backdrop-blur-sm transition-transform duration-300 ease-in-out' : 'md:w-80 flex-shrink-0'}
+          ${showList ? (isMobile ? 'translate-x-0' : 'block') : (isMobile ? 'translate-x-full' : 'hidden md:block')}
+        `}>
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
+            {/* En-tête avec bouton fermeture pour mobile */}
+            <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-4 flex justify-between items-center">
+              <div>
+                <h3 className="text-white font-bold flex items-center gap-2">
+                  <FaList className="w-4 h-4" />
+                  Sites touristiques
+                </h3>
+                <p className="text-white/80 text-sm mt-1">{sites.length} sites a decouvrir</p>
+              </div>
+              {isMobile && (
                 <button
-                  key={site.id}
-                  onClick={() => openSitePopup(site.id)}
-                  className="w-full text-left p-4 hover:bg-orange-50 transition-all group"
+                  onClick={() => setShowList(false)}
+                  className="text-white p-2 hover:bg-white/20 rounded-lg transition"
                 >
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0">
-                      <img
-                        src={site.images?.[0] || site.imageUrl}
-                        alt={site.name}
-                        className="w-12 h-12 rounded-lg object-cover"
-                        onError={(e) => {
-                          e.target.src = 'https://placehold.co/100x100?text=Photo'
-                        }}
-                      />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2">
-                        <div
-                          className="w-2 h-2 rounded-full"
-                          style={{ backgroundColor: categoryColors[site.category] || '#f97316' }}
-                        />
-                        <span className="text-xs text-gray-500">
-                          {categoryLabels[site.category]}
-                        </span>
-                      </div>
-                      <h4 className="font-semibold text-gray-900 group-hover:text-orange-500 transition">
-                        {site.name}
-                      </h4>
-                      <p className="text-xs text-gray-500 truncate">{site.shortDescription}</p>
-                    </div>
-                  </div>
+                  <FaTimes className="w-5 h-5" />
                 </button>
-              ))}
+              )}
+            </div>
+            
+            {/* Liste scrollable */}
+            <div className="flex-1 overflow-y-auto">
+              <div className="divide-y divide-gray-100">
+                {sites.map((site) => (
+                  <button
+                    key={site.id}
+                    onClick={() => openSitePopup(site.id)}
+                    className="w-full text-left p-4 hover:bg-orange-50 transition-all group"
+                  >
+                    <div className="flex gap-3">
+                      <div className="flex-shrink-0">
+                        <img
+                          src={site.images?.[0] || site.imageUrl}
+                          alt={site.name}
+                          className="w-12 h-12 rounded-lg object-cover"
+                          onError={(e) => {
+                            e.target.src = 'https://placehold.co/100x100?text=Photo'
+                          }}
+                        />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2">
+                          <div
+                            className="w-2 h-2 rounded-full"
+                            style={{ backgroundColor: categoryColors[site.category] || '#f97316' }}
+                          />
+                          <span className="text-xs text-gray-500">
+                            {categoryLabels[site.category]}
+                          </span>
+                        </div>
+                        <h4 className="font-semibold text-gray-900 group-hover:text-orange-500 transition">
+                          {site.name}
+                        </h4>
+                        <p className="text-xs text-gray-500 truncate">{site.shortDescription}</p>
+                      </div>
+                    </div>
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -183,13 +207,12 @@ export default function Map({ sites }) {
             center={center}
             zoom={13}
             style={{ height: '500px', width: '100%' }}
-            className="rounded-2xl shadow-lg"
+            className="rounded-2xl shadow-lg z-0"
             ref={mapRef}
           >
             <RecenterMap center={center} />
             <PopupOpener 
               markerRef={markerRef} 
-              siteId={selectedSiteId} 
               selectedSiteId={selectedSiteId}
             />
             <TileLayer
