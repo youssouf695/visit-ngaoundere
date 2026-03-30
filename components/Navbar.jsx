@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
-import { FaMapMarkedAlt, FaUserAstronaut, FaEnvelope, FaHome, FaBars, FaTimes } from 'react-icons/fa'
+import { FaMapMarkedAlt, FaUserAstronaut, FaEnvelope, FaHome, FaBars, FaTimes, FaMountain } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navItems = [
@@ -40,9 +40,11 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="group relative">
+            <Link href="/" className="group relative flex items-center gap-2">
+              {/* Logo / Icône */}
+              <img src="/favicon.ico" alt="Logo" className="w-8 h-8" />
               <span className="text-xl font-bold gradient-text">
-                Ngaoundéré<span className="text-orange-600">.</span>Tour
+                Visit<span className="text-orange-600">.</span>N'Déré
               </span>
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-purple-600 group-hover:w-full transition-all duration-300" />
             </Link>

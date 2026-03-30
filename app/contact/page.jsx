@@ -10,7 +10,7 @@ export default function ContactPage() {
     { icon: FaEnvelope, label: 'Email', value: 'youssoufanjupuen@gmail.com', link: 'mailto:youssoufanjupuen@gmail.com' },
     { icon: FaMapMarkerAlt, label: 'Localisation', value: 'Ngaoundéré, Cameroun', link: null },
     { icon: FaPhone, label: 'Téléphone', value: '+237 695 12 10 70', link: 'tel:+237695121070' },
-    { icon: FaClock, label: 'Réponse', value: 'Sous 24-48h', link: null },
+    { icon: FaClock, label: 'Réponse', value: 'Sous 24h', link: null },
   ]
 
   return (

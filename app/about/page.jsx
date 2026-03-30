@@ -65,8 +65,9 @@ export default function AboutPage() {
             <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white" />
           </div>
 
-          <h2 className="text-2xl font-bold mt-4 mb-2">Youssouf Njupuen</h2>
-          <p className="text-orange-500 font-medium mb-4">Developpeur Full-Stack & Designer</p>
+          <h2 className="text-2xl font-bold mt-4 mb-2">Youssoufa Njupuen</h2>
+          <span className="text-gray-500 font-medium mb-4">||- Freelance - Services -||</span>
+          <p className="text-orange-500 font-medium mb-4">UI/UX Designer • Web Developer • Mobile App Developer</p>
           <p className="text-gray-600 max-w-md mx-auto">
             Base a Ngaoundere, passionne par la creation d'applications web modernes, le design et l'intelligence artificielle.
           </p>
