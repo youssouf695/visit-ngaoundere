@@ -41,11 +41,11 @@ export default function AboutPage() {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            A propos du <span className="gradient-text">developpeur</span>
+            À propos du <span className="gradient-text">développeur</span>
           </h1>
 
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Passionne par le web, le design et les technologies modernes, je cree des experiences digitales uniques
+            Passionné par le web, le design et les technologies modernes, je crée des expériences digitales uniques
           </p>
         </motion.div>
 
@@ -66,10 +66,10 @@ export default function AboutPage() {
           </div>
 
           <h2 className="text-2xl font-bold mt-4 mb-2">Youssoufa Njupuen</h2>
-          <span className="text-gray-500 font-medium mb-4">||- Freelance - Services -||</span>
+          <span className="text-gray-500 font-medium mb-4">|| Freelance - Services ||</span>
           <p className="text-orange-500 font-medium mb-4">UI/UX Designer • Web Developer • Mobile App Developer</p>
           <p className="text-gray-600 max-w-md mx-auto">
-            Base a Ngaoundere, passionne par la creation d'applications web modernes, le design et l'intelligence artificielle.
+            Basé à Ngaoundéré, passionné par la création d'applications web modernes, le design et l'intelligence artificielle.
           </p>
 
           {/* Social */}
@@ -107,7 +107,7 @@ export default function AboutPage() {
           transition={{ delay: 0.2 }}
           className="mb-8"
         >
-          <h2 className="text-2xl font-bold mb-6 text-center">Competences techniques</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center">Compétences techniques</h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {skills.map((skill, index) => (
@@ -138,14 +138,14 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-gray-600 mb-4">
-            Ce guide a ete cree specialement pour les participants d'IndabaX Cameroun 2026 a Ngaoundere. 
-            L'objectif est de vous aider a decouvrir la ville entre deux sessions de conference.
+            Ce guide a été créé spécialement pour les participants d'IndabaX Cameroun 2026 à Ngaoundéré. 
+            L'objectif est de vous aider à découvrir la ville entre deux sessions de conférence.
           </p>
 
           <div className="bg-orange-50 rounded-xl p-4">
             <div className="flex items-center gap-2 text-sm text-orange-700">
               <FaHeart className="w-4 h-4" />
-              <span>100% gratuit - Cree avec passion pour la communaute</span>
+              <span>100% gratuit - Créé avec passion pour la communauté</span>
             </div>
           </div>
         </motion.div>

@@ -6,8 +6,8 @@
       "slug": "palais-lamido",
       "category": "culture",
       "shortDescription": "Un voyage dans le temps au coeur de l'histoire peule",
-      "description": "Entrez dans la demeure sacree des rois peuls. Un chef-d'oeuvre d'architecture soudano-sahelienne qui vous transporte 100 ans en arriere.",
-      "longDescription": "Imaginez-vous franchissant les portes d'un palais centenaire, la ou les Lamidos (rois) ont gouverne pendant des generations. Le Palais du Lamido n'est pas un simple monument - c'est une experience vivante. Les murs en terre battue racontent des histoires, les motifs traditionnels cachent des symboles sacres, et l'energie du lieu vous enveloppe des votre arrivee. La visite guidee vous plonge dans les recits captivants des batailles, des alliances et des traditions qui ont forge l'identite de Ngaoundere. Les fresques murales representant des girafes et des motifs geometriques sont uniques au Cameroun. C'est l'endroit parfait pour comprendre l'ame de la ville et repartir avec des photos dignes d'un magazine National Geographic.",
+      "description": "Entrez dans la demeure sacrée des rois peuls. Un chef-d'oeuvre d'architecture soudano-sahélienne qui vous transporte 100 ans en arrière.",
+      "longDescription": "Imaginez-vous franchissant les portes d'un palais centenaire, là où les Lamidos (rois) ont gouverné pendant des générations. Le Palais du Lamido n'est pas un simple monument - c'est une expérience vivante. Les murs en terre battue racontent des histoires, les motifs traditionnels cachent des symboles sacrés, et l'énergie du lieu vous enveloppe dès votre arrivée. La visite guidée vous plonge dans les récits captivants des batailles, des alliances et des traditions qui ont forgé l'identité de Ngaoundéré. Les fresques murales représentant des girafes et des motifs géométriques sont uniques au Cameroun. C'est l'endroit parfait pour comprendre l'âme de la ville et repartir avec des photos dignes d'un magazine National Geographic.",
       "latitude": 7.3167,
       "longitude": 13.5833,
       "images": [
@@ -20,13 +20,13 @@
       ],
       "imageUrl": "/images/palais/palais-principal.jpg",
       "imageCredit": "Youssoufa Njupuen | Collection personnelle, Facebook | Visiter le Cameroun avec moi",
-      "localTip": "Astuce pro : demandez au guide de vous montrer les dessins de girafes caches sur les murs interieurs - ils sont difficiles a voir sans indication.",
+      "localTip": "Astuce pro : demandez au guide de vous montrer les dessins de girafes cachés sur les murs intérieurs - ils sont difficiles à voir sans indication.",
       "openingHours": "9h - 12h, 15h - 18h",
       "entryFee": "1000 FCFA",
-      "bestTime": "Matin (9h-11h) - la lumiere est parfaite pour les photos",
+      "bestTime": "Matin (9h-11h) - la lumière est parfaite pour les photos",
       "nearbySpots": [
         {
-          "name": "Chez Aissatou",
+          "name": "Chez Aïssatou",
           "type": "restaurant",
           "description": "Cuisine peule authentique - le riz au gras est une tuerie",
           "distance": "200m"
@@ -38,9 +38,9 @@
       "name": "Chutes de la Vina",
       "slug": "chutes-vina",
       "category": "nature",
-      "shortDescription": "L'endroit ou la nature vous embrasse",
-      "description": "Une cascade spectaculaire a seulement 15km de la ville. Le bruit de l'eau, la fraicheur, la vegetation luxuriante... votre pause nature parfaite.",
-      "longDescription": "Fermez les yeux. Ecoutez. C'est le son de l'eau qui tombe avec puissance, un murmure constant qui efface le stress de la journee. Les Chutes de la Vina, c'est cette bouffee d'air frais dont vous ne saviez pas avoir besoin. En saison des pluies, le spectacle est grandiose : un rideau d'eau de plusieurs metres de haut qui se jette dans une piscine naturelle. Oui, vous pouvez vous baigner ! L'eau est fraiche, revigorante, et les petits poissons vous feront un pedicure naturel. Installez-vous sur les rochers, sortez votre pique-nique, et laissez le temps s'arreter. Les couchers de soleil ici sont si beaux qu'ils rendent jaloux les cartes postales. C'est l'endroit ideal pour une pause entre deux sessions de conference, ou pour une demi-journee d'evasion.",
+      "shortDescription": "L'endroit où la nature vous embrasse",
+      "description": "Une cascade spectaculaire à seulement 15km de la ville. Le bruit de l'eau, la fraîcheur, la végétation luxuriante... votre pause nature parfaite.",
+      "longDescription": "Fermez les yeux. Écoutez. C'est le son de l'eau qui tombe avec puissance, un murmure constant qui efface le stress de la journée. Les Chutes de la Vina, c'est cette bouffée d'air frais dont vous ne saviez pas avoir besoin. En saison des pluies, le spectacle est grandiose : un rideau d'eau de plusieurs mètres de haut qui se jette dans une piscine naturelle. Oui, vous pouvez vous baigner ! L'eau est fraîche, revigorante, et les petits poissons vous feront un pédicure naturel. Installez-vous sur les rochers, sortez votre pique-nique, et laissez le temps s'arrêter. Les couchers de soleil ici sont si beaux qu'ils rendent jaloux les cartes postales. C'est l'endroit idéal pour une pause entre deux sessions de conférence, ou pour une demi-journée d'évasion.",
       "latitude": 7.2500,
       "longitude": 13.5500,
       "images": [
@@ -51,15 +51,15 @@
       ],
       "imageUrl": "/images/chutes/chutes-principale.jpg",
       "imageCredit": "Facebook | Visiter le Cameroun avec moi",
-      "localTip": "Le secret : apportez votre maillot de bain. La baignade sous la cascade est autorisee et absolument magique.",
-      "openingHours": "Toute la journee",
+      "localTip": "Le secret : apportez votre maillot de bain. La baignade sous la cascade est autorisée et absolument magique.",
+      "openingHours": "Toute la journée",
       "entryFee": "500 FCFA",
-      "bestTime": "Matin (8h-10h) pour eviter la foule ou fin d'apres-midi pour la lumiere doree",
+      "bestTime": "Matin (8h-10h) pour éviter la foule ou fin d'après-midi pour la lumière dorée",
       "nearbySpots": [
         {
-          "name": "Poisson braise de la Vina",
+          "name": "Poisson braisé de la Vina",
           "type": "restaurant",
-          "description": "Du poisson frais grille au bois de braise - une explosion de saveurs",
+          "description": "Du poisson frais grillé au bois de braise - une explosion de saveurs",
           "distance": "Sur place"
         }
       ]
@@ -69,9 +69,9 @@
       "name": "Lac Tison",
       "slug": "lac-tison",
       "category": "nature",
-      "shortDescription": "Le miroir d'eau qui reveille vos sens",
-      "description": "Un lac de cratere aux eaux d'une clarte surprenante. Randonnee douce, vue imprenable, et une paix absolue.",
-      "longDescription": "Imaginez un lac si calme qu'il reflechit parfaitement le ciel. C'est le Lac Tison. Forme dans le cratere d'un volcan eteint il y a des millions d'annees, ce joyau geologique est un secret bien garde. Le sentier de randonnee de 3km qui fait le tour du lac est une promenade meditative : les arbres centenaires, le chant des oiseaux, l'eau qui clapote doucement. Au lever du soleil, quand les rayons traversent la brume matinale, le lac se transforme en miroir d'argent. C'est l'endroit parfait pour les amateurs de photographie, pour les couples en quete de romantisme, ou simplement pour ceux qui veulent s'asseoir en silence et regarder le monde tourner. Le meilleur moment ? 6h du matin. Prenez votre cafe, votre appareil photo, et allez vivre ce moment. Vous nous remercierez plus tard.",
+      "shortDescription": "Le miroir d'eau qui réveille vos sens",
+      "description": "Un lac de cratère aux eaux d'une clarté surprenante. Randonnée douce, vue imprenable, et une paix absolue.",
+      "longDescription": "Imaginez un lac si calme qu'il réfléchit parfaitement le ciel. C'est le Lac Tison. Formé dans le cratère d'un volcan éteint il y a des millions d'années, ce joyau géologique est un secret bien gardé. Le sentier de randonnée de 3km qui fait le tour du lac est une promenade méditative : les arbres centenaires, le chant des oiseaux, l'eau qui clapote doucement. Au lever du soleil, quand les rayons traversent la brume matinale, le lac se transforme en miroir d'argent. C'est l'endroit parfait pour les amateurs de photographie, pour les couples en quête de romantisme, ou simplement pour ceux qui veulent s'asseoir en silence et regarder le monde tourner. Le meilleur moment ? 6h du matin. Prenez votre café, votre appareil photo, et allez vivre ce moment. Vous nous remercierez plus tard.",
       "latitude": 7.3500,
       "longitude": 13.6000,
       "images": [
@@ -81,10 +81,10 @@
       ],
       "imageUrl": "/images/lac-tison/lac-tison.jpg",
       "imageCredit": "Shutterstock, Facebook | Visiter le Cameroun avec moi",
-      "localTip": "Le conseil : partez a 6h du matin. La brume sur le lac au lever du soleil est un spectacle que vous n'oublierez jamais.",
-      "openingHours": "Acces libre",
+      "localTip": "Le conseil : partez à 6h du matin. La brume sur le lac au lever du soleil est un spectacle que vous n'oublierez jamais.",
+      "openingHours": "Accès libre",
       "entryFee": "Gratuit",
-      "bestTime": "Matin (6h-9h) - lumiere magique garantie",
+      "bestTime": "Matin (6h-9h) - lumière magique garantie",
       "nearbySpots": []
     },
     {
@@ -93,8 +93,8 @@
       "slug": "bois-mardock",
       "category": "detente",
       "shortDescription": "La pause chic au coeur de la ville",
-      "description": "Un jardin botanique, des cases traditionnelles, des restaurants... le spot parfait pour dejeuner ou se detendre.",
-      "longDescription": "Vous avez besoin d'une pause ? Direction le Bois de Mardock. Ce n'est pas juste un jardin, c'est une experience. Imaginez des cases traditionnelles en terre, des arbres centenaires, une ambiance tamisee le soir... et des restaurants qui servent une cuisine camerounaise digne des plus grandes tables. Le poulet DG ? Une merveille. Le poisson braise ? Une tuerie. L'endroit est parfait pour un dejeuner entre collegues apres une session intense de conference, ou pour un diner romantique sous les etoiles. La lumiere des lampions le soir cree une atmosphere unique. C'est l'endroit ou les locaux viennent se detendre - et maintenant, vous connaissez le secret. Bonus : l'entree n'est que de 200 FCFA. Pour le cadre, c'est une affaire.",
+      "description": "Un jardin botanique, des cases traditionnelles, des restaurants... le spot parfait pour déjeuner ou se détendre.",
+      "longDescription": "Vous avez besoin d'une pause ? Direction le Bois de Mardock. Ce n'est pas juste un jardin, c'est une expérience. Imaginez des cases traditionnelles en terre, des arbres centenaires, une ambiance tamisée le soir... et des restaurants qui servent une cuisine camerounaise digne des plus grandes tables. Le poulet DG ? Une merveille. Le poisson braisé ? Une tuerie. L'endroit est parfait pour un déjeuner entre collègues après une session intense de conférence, ou pour un dîner romantique sous les étoiles. La lumière des lampions le soir crée une atmosphère unique. C'est l'endroit où les locaux viennent se détendre - et maintenant, vous connaissez le secret. Bonus : l'entrée n'est que de 200 FCFA. Pour le cadre, c'est une affaire.",
       "latitude": 7.3100,
       "longitude": 13.5700,
       "images": [
@@ -113,7 +113,7 @@
       "bestTime": "Soir (18h-21h) - les lampions, la musique, l'ambiance...",
       "nearbySpots": [
         {
-          "name": "Snack Les Delices",
+          "name": "Snack Les Délices",
           "type": "cafe",
           "description": "Glaces artisanales et jus de bissap maison",
           "distance": "Dans l'enceinte"
@@ -122,12 +122,12 @@
     },
     {
       "id": 5,
-      "name": "Mont Ngaoundere",
+      "name": "Mont Ngaoundéré",
       "slug": "mont-ngaoundere",
       "category": "aventure",
       "shortDescription": "La vue qui vaut TOUS les efforts",
-      "description": "La montagne qui a donne son nom a la ville. Une ascension moderee, une recompense immense : la meilleure vue de Ngaoundere.",
-      "longDescription": "Vous voulez voir Ngaoundere comme vous ne l'avez jamais vue ? Montez au Mont Ngaoundere. Son nom signifie 'montagne nombril' - et c'est le coeur de la ville. L'ascension est accessible a tous (environ 30-40 minutes), mais la vue au sommet... elle vous coupe le souffle. 360 degres sur la ville, les plateaux de l'Adamaoua, et par temps clair, les montagnes au loin. C'est l'endroit parfait pour le coucher de soleil. Apportez votre appareil photo, votre meilleur sourire, et preparez-vous a des cliches qui feront le tour d'Instagram. Les habitants viennent ici pour reflechir, prier, ou simplement admirer. C'est gratuit, c'est magnifique, et c'est a deux pas du centre-ville. Alors, on monte ?",
+      "description": "La montagne qui a donné son nom à la ville. Une ascension modérée, une récompense immense : la meilleure vue de Ngaoundéré.",
+      "longDescription": "Vous voulez voir Ngaoundéré comme vous ne l'avez jamais vue ? Montez au Mont Ngaoundéré. Son nom signifie 'montagne nombril' - et c'est le coeur de la ville. L'ascension est accessible à tous (environ 30-40 minutes), mais la vue au sommet... elle vous coupe le souffle. 360 degrés sur la ville, les plateaux de l'Adamaoua, et par temps clair, les montagnes au loin. C'est l'endroit parfait pour le coucher de soleil. Apportez votre appareil photo, votre meilleur sourire, et préparez-vous à des clichés qui feront le tour d'Instagram. Les habitants viennent ici pour réfléchir, prier, ou simplement admirer. C'est gratuit, c'est magnifique, et c'est à deux pas du centre-ville. Alors, on monte ?",
       "latitude": 7.3167,
       "longitude": 13.5833,
       "images": [
@@ -139,15 +139,15 @@
       ],
       "imageUrl": "/images/mont-ngaoundere/mont-ngaoundere-somet.jpg",
       "imageCredit": "Facebook | Visiter le Cameroun avec moi",
-      "localTip": "Le plan parfait : partez a 16h, montez tranquillement, arrivez pour 17h, et regardez le soleil se coucher. Magique.",
-      "openingHours": "Acces libre toute la journee",
+      "localTip": "Le plan parfait : partez à 16h, montez tranquillement, arrivez pour 17h, et regardez le soleil se coucher. Magique.",
+      "openingHours": "Accès libre toute la journée",
       "entryFee": "Gratuit",
-      "bestTime": "Fin d'apres-midi (16h-18h) pour le coucher de soleil",
+      "bestTime": "Fin d'après-midi (16h-18h) pour le coucher de soleil",
       "nearbySpots": [
         {
           "name": "Maquis du Mont",
           "type": "restaurant",
-          "description": "Une biere fraiche et des brochettes au pied du mont - la recompense parfaite",
+          "description": "Une bière fraîche et des brochettes au pied du mont - la récompense parfaite",
           "distance": "Au pied"
         }
       ]
@@ -157,9 +157,9 @@
       "name": "Mont Nganha",
       "slug": "mont-nganha",
       "category": "aventure",
-      "shortDescription": "Le defi ultime pour les aventuriers",
-      "description": "Un volcan eteint, une randonnee exigeante, une recompense : le panorama a 360 degres le plus spectaculaire de la region.",
-      "longDescription": "Attention : ce site n'est pas pour les amateurs. Le Mont Nganha est le defi des vrais aventuriers. Un volcan eteint qui culmine a plus de 1900 metres. L'ascension dure 2 a 3 heures, la pente est raide, le terrain caillouteux... mais au sommet, vous comprendrez pourquoi on en parle. La vue sur les plateaux de l'Adamaoua, les vallees profondes, les autres sommets a perte de vue... c'est a la fois vertigineux et spirituel. Les guides locaux (indispensables) connaissent les meilleurs chemins et vous raconteront les legendes qui entourent la montagne. Le meilleur moment ? Le lever du soleil. Partez a 5h du matin avec une lampe frontale, montez dans la fraicheur, et assistez a la naissance du jour depuis le toit de la region. C'est difficile. C'est exigeant. Mais c'est inoubliable. Vous etes prets ?",
+      "shortDescription": "Le défi ultime pour les aventuriers",
+      "description": "Un volcan éteint, une randonnée exigeante, une récompense : le panorama à 360 degrés le plus spectaculaire de la région.",
+      "longDescription": "Attention : ce site n'est pas pour les amateurs. Le Mont Nganha est le défi des vrais aventuriers. Un volcan éteint qui culmine à plus de 1900 mètres. L'ascension dure 2 à 3 heures, la pente est raide, le terrain caillouteux... mais au sommet, vous comprendrez pourquoi on en parle. La vue sur les plateaux de l'Adamaoua, les vallées profondes, les autres sommets à perte de vue... c'est à la fois vertigineux et spirituel. Les guides locaux (indispensables) connaissent les meilleurs chemins et vous raconteront les légendes qui entourent la montagne. Le meilleur moment ? Le lever du soleil. Partez à 5h du matin avec une lampe frontale, montez dans la fraîcheur, et assistez à la naissance du jour depuis le toit de la région. C'est difficile. C'est exigeant. Mais c'est inoubliable. Vous êtes prêts ?",
       "latitude": 7.4000,
       "longitude": 13.5500,
       "images": [
@@ -171,15 +171,15 @@
       ],
       "imageUrl": "/images/nganha/nganha.jpg",
       "imageCredit": "Facebook | Visiter le Cameroun avec moi",
-      "localTip": "L'astuce de pro : depart a 5h pile, 2 litres d'eau par personne, des chaussures de rando, et un guide. La montee avant le lever du soleil vaut chaque goutte de sueur.",
-      "openingHours": "Toute la journee",
-      "entryFee": "1000 FCFA (guide recommande)",
-      "bestTime": "Depart a 5h pour le lever de soleil - la lumiere est epoustouflante",
+      "localTip": "L'astuce de pro : départ à 5h pile, 2 litres d'eau par personne, des chaussures de rando, et un guide. La montée avant le lever du soleil vaut chaque goutte de sueur.",
+      "openingHours": "Toute la journée",
+      "entryFee": "1000 FCFA (guide recommandé)",
+      "bestTime": "Départ à 5h pour le lever de soleil - la lumière est époustouflante",
       "nearbySpots": [
         {
           "name": "Guide local",
           "type": "service",
-          "description": "Des guides experts disponibles a l'entree - ne partez pas sans eux",
+          "description": "Des guides experts disponibles à l'entrée - ne partez pas sans eux",
           "distance": "Sur place"
         }
       ]

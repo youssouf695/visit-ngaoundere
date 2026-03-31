@@ -19,10 +19,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold gradient-text mb-4">
-              Ngaoundere<span className="text-orange-500">.</span>Tour
+              Visit<span className="text-orange-500">.</span>N'Déré
             </h3>
             <p className="text-gray-400 text-sm max-w-md">
-              Guide interactif cree specialement pour les participants d&apos;IndabaX Cameroun 2026. 
+              Guide interactif créé spécialement pour les participants d&apos;IndabaX Cameroun 2026. 
               Explorez la ville autrement.
             </p>
             <div className="flex gap-4 mt-6">
@@ -42,10 +42,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-4">Liens rapides</h4>
             <ul className="space-y-2 text-sm">
-              {['Accueil', 'Sites', 'A propos', 'Contact'].map((item) => (
+              {['Accueil', 'Sites', 'À propos', 'Contact'].map((item) => (
                 <li key={item}>
                   <Link 
-                    href={`/${item === 'Accueil' ? '' : item.toLowerCase() === 'sites' ? 'sites' : item.toLowerCase() === 'a propos' ? 'about' : item.toLowerCase()}`}
+                    href={`/${item === 'Accueil' ? '' : item === 'À propos' ? 'about' : item.toLowerCase() === 'sites' ? 'sites' : item.toLowerCase() === 'contact' ? 'contact' : ''}`}
                     className="text-gray-400 hover:text-orange-400 transition-colors flex items-center gap-2 group"
                   >
                     <span className="w-1 h-1 bg-orange-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -62,11 +62,11 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="flex items-center gap-2">
                 <span className="w-1 h-1 bg-orange-500 rounded-full" />
-                Conference: IndabaX 2026
+                Conférence: IndabaX 2026
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1 h-1 bg-orange-500 rounded-full" />
-                Ville: Ngaoundere
+                Ville: Ngaoundéré
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1 h-1 bg-orange-500 rounded-full" />
@@ -89,9 +89,9 @@ export default function Footer() {
             </a>
             <span className="mx-2">•</span>
             <FaCode className="w-4 h-4" />
-            Propulse par Corporate Tech Solution
+            Propulsé par Corporate Tech Solution
           </p>
-          <p className="mt-2">© {currentYear} - Tous droits reserves</p>
+          <p className="mt-2">© {currentYear} - Tous droits réservés</p>
         </div>
       </div>
     </footer>
