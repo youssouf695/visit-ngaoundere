@@ -68,6 +68,7 @@ export default function Map({ sites }) {
   const [selectedSiteId, setSelectedSiteId] = useState(null)
   const [showList, setShowList] = useState(true)
   const [isMobile, setIsMobile] = useState(false)
+  const [showTooltip, setShowTooltip] = useState(true)
 
   useEffect(() => {
     const checkMobile = () => {
@@ -75,6 +76,10 @@ export default function Map({ sites }) {
       setIsMobile(mobile)
       if (mobile) {
         setShowList(false)
+        // Afficher le tooltip pendant 5 secondes au premier chargement
+        setTimeout(() => {
+          setShowTooltip(false)
+        }, 5000)
       } else {
         setShowList(true)
       }
@@ -102,7 +107,6 @@ export default function Map({ sites }) {
 
   const openSitePopup = (siteId) => {
     setSelectedSiteId(siteId)
-    // Fermer la liste automatiquement sur mobile après sélection
     if (isMobile) {
       setShowList(false)
     }
@@ -122,24 +126,40 @@ export default function Map({ sites }) {
 
   return (
     <div className="relative">
-      {/* Bouton toggle pour mobile - toujours visible sur mobile */}
+      {/* Bouton toggle pour mobile avec tooltip */}
       {isMobile && (
-        <button
-          onClick={() => setShowList(!showList)}
-          className="fixed bottom-4 right-4 z-30 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition-all"
-        >
-          {showList ? <FaTimes className="w-5 h-5" /> : <FaList className="w-5 h-5" />}
-        </button>
+        <div className="fixed bottom-4 right-4 z-30">
+          {/* Tooltip */}
+          {showTooltip && (
+            <div className="absolute bottom-16 right-0 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap animate-pulse shadow-lg">
+              <span className="flex items-center gap-2">
+                <FaList className="w-3 h-3" />
+                Voir la liste des sites
+              </span>
+              <div className="absolute -bottom-2 right-4 w-4 h-4 bg-gray-900 rotate-45" />
+            </div>
+          )}
+          
+          {/* Bouton */}
+          <button
+            onClick={() => {
+              setShowList(!showList)
+              setShowTooltip(false)
+            }}
+            className="bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition-all hover:scale-105"
+          >
+            {showList ? <FaTimes className="w-5 h-5" /> : <FaList className="w-5 h-5" />}
+          </button>
+        </div>
       )}
 
       <div className="flex flex-col md:flex-row gap-4">
-        {/* Liste des sites - gestion mobile améliorée */}
+        {/* Liste des sites */}
         <div className={`
           ${isMobile ? 'fixed inset-0 z-20 bg-white/95 backdrop-blur-sm transition-transform duration-300 ease-in-out' : 'md:w-80 flex-shrink-0'}
           ${showList ? (isMobile ? 'translate-x-0' : 'block') : (isMobile ? 'translate-x-full' : 'hidden md:block')}
         `}>
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
-            {/* En-tête avec bouton fermeture pour mobile */}
             <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-4 flex justify-between items-center">
               <div>
                 <h3 className="text-white font-bold flex items-center gap-2">
@@ -158,7 +178,6 @@ export default function Map({ sites }) {
               )}
             </div>
             
-            {/* Liste scrollable */}
             <div className="flex-1 overflow-y-auto">
               <div className="divide-y divide-gray-100">
                 {sites.map((site) => (
