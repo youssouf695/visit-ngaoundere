@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>🌸 Pour toi, Cressy 🌸</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(145deg, #ffdde1 0%, #ee9ca7 100%);
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27"><path fill="%23ff4d6d" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') 12 5, auto;
+        }
+
+        .card {
+            max-width: 650px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-radius: 68px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), inset 0 1px 2px rgba(255,255,255,0.6);
+            overflow: hidden;
+            padding: 2rem 2rem 3rem;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255,255,240,0.6);
+            text-align: center;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .emoji-big {
+            font-size: 5.5rem;
+            filter: drop-shadow(2px 6px 12px rgba(0,0,0,0.15));
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #c0392b, #ff6b81, #f1c40f);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin: 0.5rem 0 1rem;
+            letter-spacing: -0.5px;
+        }
+
+        .petite-douceur {
+            background: #fff0f3;
+            padding: 1.2rem;
+            border-radius: 48px;
+            margin: 1.5rem 0;
+            box-shadow: inset 0 1px 4px #ffe3e9, 0 6px 12px rgba(0,0,0,0.05);
+        }
+
+        .message {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            color: #2d3e50;
+            font-weight: 500;
+            padding: 0 1rem;
+        }
+
+        .message strong {
+            color: #e84393;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .hearts-rain {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 30px 0 20px;
+        }
+
+        .hearts-rain span {
+            font-size: 2rem;
+            animation: heartFloat 2s infinite;
+            display: inline-block;
+        }
+
+        .hearts-rain span:nth-child(odd) { animation-delay: 0.3s; }
+        .hearts-rain span:nth-child(3) { animation-delay: 0.7s; }
+        .hearts-rain span:nth-child(5) { animation-delay: 0.2s; }
+
+        @keyframes heartFloat {
+            0% { transform: scale(0.8) translateY(0); opacity: 0.6; }
+            100% { transform: scale(1.2) translateY(-12px); opacity: 1; }
+        }
+
+        .btn-special {
+            background: #ff9a9e;
+            border: none;
+            padding: 14px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 60px;
+            color: #2c1e2f;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 6px 0 #b3415b;
+            margin-top: 20px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .btn-special:active {
+            transform: translateY(3px);
+            box-shadow: 0 2px 0 #b3415b;
+        }
+
+        .secret-message {
+            margin-top: 28px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            background: #ffecb3;
+            display: inline-block;
+            padding: 8px 22px;
+            border-radius: 50px;
+            color: #b45116;
+            opacity: 0;
+            transition: opacity 0.4s;
+            cursor: pointer;
+        }
+
+        .secret-message.show {
+            opacity: 1;
+        }
+
+        footer {
+            margin-top: 35px;
+            font-size: 0.85rem;
+            color: #a55a6b;
+        }
+
+        @media (max-width: 550px) {
+            .card { padding: 1.5rem; }
+            h1 { font-size: 2rem; }
+            .message { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card" id="card">
+    <div class="emoji-big">🌸✨💖</div>
+    <h1>Pour toi, <span style="background: linear-gradient(120deg, #ffb347, #ff6b6b); background-clip: text; -webkit-background-clip: text; color: transparent;">Cressy</span> 💫</h1>
+
+    <div class="petite-douceur">
+        <div class="message">
+            Coucou ma Lucress… ma <strong>CRESSY</strong> adorée 🌷<br><br>
+            Je sais que cette journée est un peu moins lumineuse, mais je voulais te rappeler <strong>quelque chose d'important</strong> :<br><br>
+            ✨ <strong>Ton sourire</strong> est mon rayon de soleil préféré. ✨<br><br>
+            Chaque petite chose que tu es, chaque éclat de rire, chaque regard, me rend plus heureux que tout.<br>
+            Alors si aujourd'hui le monde est gris, laisse-moi être ta palette de couleurs 🎨💛
+        </div>
+    </div>
+
+    <div class="hearts-rain">
+        <span>💗</span> <span>💖</span> <span>💕</span> <span>💓</span> <span>💞</span> <span>💘</span>
+    </div>
+
+    <button class="btn-special" id="surpriseBtn">🌸 Un petit quelque chose pour toi 🌸</button>
+    
+    <div id="secretZone" class="secret-message">
+        ❤️ Je t'aime très fort, ma Cressy ❤️
+    </div>
+
+    <footer>
+        ✨ un espace rien que pour toi, parce que tu mérites tout l’amour du monde ✨
+    </footer>
+</div>
+
+<script>
+    const btn = document.getElementById('surpriseBtn');
+    const secret = document.getElementById('secretZone');
+    const card = document.getElementById('card');
+
+    btn.addEventListener('click', () => {
+        secret.classList.toggle('show');
+        if(secret.classList.contains('show')) {
+            // pluie de confettis douce
+            for(let i=0; i<50; i++) {
+                createConfetti();
+            }
+            btn.textContent = "✨ Encore un peu de douceur ? ✨";
+            btn.style.background = "#ffc3c6";
+        } else {
+            btn.textContent = "🌸 Un petit quelque chose pour toi 🌸";
+            btn.style.background = "#ff9a9e";
+        }
+    });
+
+    function createConfetti() {
+        const conf = document.createElement('div');
+        conf.innerHTML = ['🌸','💖','🌼','✨','⭐','💗'][Math.floor(Math.random()*6)];
+        conf.style.position = 'fixed';
+        conf.style.fontSize = (Math.random() * 20 + 14) + 'px';
+        conf.style.left = Math.random() * window.innerWidth + 'px';
+        conf.style.top = '-30px';
+        conf.style.opacity = '0.9';
+        conf.style.pointerEvents = 'none';
+        conf.style.zIndex = '9999';
+        conf.style.transition = 'all 3s ease-out';
+        document.body.appendChild(conf);
+        
+        let targetY = window.innerHeight + 30;
+        let randomX = (Math.random() - 0.5) * 100;
+        
+        setTimeout(() => {
+            conf.style.transform = `translate(${randomX}px, ${targetY}px) rotate(360deg)`;
+            conf.style.opacity = '0';
+        }, 10);
+        
+        setTimeout(() => {
+            conf.remove();
+        }, 3200);
+    }
+
+    // ajout de petits coeurs qui flottent en fond
+    setInterval(() => {
+        if(Math.random() > 0.7) {
+            let heart = document.createElement('div');
+            heart.innerHTML = ['💕','💗','💖','💓','🌸','🌼','⭐'][Math.floor(Math.random()*7)];
+            heart.style.position = 'fixed';
+            heart.style.left = Math.random() * window.innerWidth + 'px';
+            heart.style.bottom = '-20px';
+            heart.style.fontSize = (Math.random() * 20 + 12) + 'px';
+            heart.style.opacity = '0.6';
+            heart.style.pointerEvents = 'none';
+            heart.style.zIndex = '999';
+            heart.style.transition = 'all 4s linear';
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.style.transform = 'translateY(-100vh) rotate(20deg)';
+                heart.style.opacity = '0';
+            }, 20);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 4000);
+        }
+    }, 800);
+</script>
+
+</body>
+</html>
